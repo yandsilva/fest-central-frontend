@@ -1,7 +1,9 @@
+import EventsDisplay from "../../components/EventsDisplay/EventsDisplay";
+
 export default function Home() {
   return (
     <div>
-      <h2>Ola</h2>
+      <EventsDisplay />
     </div>
   );
 }

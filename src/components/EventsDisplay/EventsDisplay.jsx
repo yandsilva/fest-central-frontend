@@ -1,6 +1,7 @@
 // import { useContext } from "react";
 // import EventsItem from "../EventsItem/EventsItem";
 // import { StoreContext } from "../../context/StoreContext";
+import "./EventsDisplay.css";
 
 export default function EventsDisplay() {
   // const { event_list } = useContext(StoreContext);
