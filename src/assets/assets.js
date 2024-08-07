@@ -5,8 +5,8 @@ import educacao_2 from "./educacao_2.png";
 
 import esportes_1 from "./esportes_1.png";
 
-import viagem_1 from "./viagem_1";
-import viagem_2 from "./viagem_2";
+import viagem_1 from "./viagem_1.png";
+import viagem_2 from "./viagem_2.png";
 
 export const event_list = [
   {
