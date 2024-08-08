@@ -19,6 +19,7 @@ export default function EventsDisplay() {
               image={item.image}
               local={item.local}
               time={item.time}
+              rating={item.rating}
             />
           );
         })}
