@@ -1,4 +1,3 @@
-import React from "react";
 import "./EventsItem.css";
 
 export default function EventsItem({

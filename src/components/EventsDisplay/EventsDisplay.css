@@ -11,3 +11,23 @@
   gap: 30px;
   row-gap: 50px;
 }
+
+.event-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.btn {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 20px;
+  color: #2b293d;
+
+  border-radius: 8px;
+  border: 2px solid #2b293d;
+
+  background: transparent;
+  padding: 12px 150px;
+}

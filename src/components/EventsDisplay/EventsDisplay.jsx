@@ -24,6 +24,11 @@ export default function EventsDisplay() {
           );
         })}
       </div>
+      <div className="event-btn">
+        <button className="btn" type="submit">
+          Veja mais
+        </button>
+      </div>
     </div>
   );
 }
