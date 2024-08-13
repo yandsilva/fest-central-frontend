@@ -4,9 +4,15 @@ import play_store from "./play_store.png";
 import facebook_icon from "./facebook_icon.svg";
 import google_play from "./google_play.svg";
 import profile from "./profile.svg";
-import star_iterested from "./star_iterested.svg";
+import star_interested from "./star_interested.svg";
 import ticket_menu from "./ticket_menu.svg";
 import hero from "./hero.png";
+import star_favorite from "./star_favorite.svg";
+import share_icon from "./share_icon.svg";
+import buy_ticket from "./buy_ticket.svg";
+import time_icon from "./time_icon.svg";
+import location_icon from "./location_icon.svg";
+import date_icon from "./date_icon.svg";
 
 import menu_1 from "./menu_1.png";
 import menu_2 from "./menu_2.png";
@@ -29,9 +35,15 @@ export const assets = {
   facebook_icon,
   google_play,
   profile,
-  star_iterested,
+  star_interested,
   ticket_menu,
   hero,
+  star_favorite,
+  share_icon,
+  buy_ticket,
+  time_icon,
+  location_icon,
+  date_icon,
 };
 
 export const menu_list = [
