@@ -1,3 +1,13 @@
+import ticket_logo from "./ticket_logo.svg";
+import apple_store from "./apple_store.png";
+import play_store from "./play_store.png";
+import facebook_icon from "./facebook_icon.svg";
+import google_play from "./google_play.svg";
+import profile from "./profile.svg";
+import star_iterested from "./star_iterested.svg";
+import ticket_menu from "./ticket_menu.svg";
+import hero from "./hero.png";
+
 import menu_1 from "./menu_1.png";
 import menu_2 from "./menu_2.png";
 import menu_3 from "./menu_3.png";
@@ -11,6 +21,18 @@ import educacao_2 from "./educacao_2.png";
 import esportes_1 from "./esportes_1.png";
 import viagem_1 from "./viagem_1.png";
 import viagem_2 from "./viagem_2.png";
+
+export const assets = {
+  ticket_logo,
+  apple_store,
+  play_store,
+  facebook_icon,
+  google_play,
+  profile,
+  star_iterested,
+  ticket_menu,
+  hero,
+};
 
 export const menu_list = [
   {
