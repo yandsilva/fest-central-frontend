@@ -1,12 +1,43 @@
-import arte_1 from "./arte_1.png";
+import menu_1 from "./menu_1.png";
+import menu_2 from "./menu_2.png";
+import menu_3 from "./menu_3.png";
+import menu_4 from "./menu_4.png";
+import menu_5 from "./menu_5.png";
+import menu_6 from "./menu_6.png";
 
+import arte_1 from "./arte_1.png";
 import educacao_1 from "./educacao_1.png";
 import educacao_2 from "./educacao_2.png";
-
 import esportes_1 from "./esportes_1.png";
-
 import viagem_1 from "./viagem_1.png";
 import viagem_2 from "./viagem_2.png";
+
+export const menu_list = [
+  {
+    menu_name: "Entreterimentos",
+    menu_image: menu_1,
+  },
+  {
+    menu_name: "Educação & Negócios",
+    menu_image: menu_2,
+  },
+  {
+    menu_name: "Culturas & Artes",
+    menu_image: menu_3,
+  },
+  {
+    menu_name: "Esportes & Fitness",
+    menu_image: menu_4,
+  },
+  {
+    menu_name: "Tecnologias & Inovação",
+    menu_image: menu_5,
+  },
+  {
+    menu_name: "Viagens & Aventuras",
+    menu_image: menu_6,
+  },
+];
 
 export const event_list = [
   {

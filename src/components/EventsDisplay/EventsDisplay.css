@@ -1,7 +1,29 @@
+.events-display {
+  margin-top: 100px;
+}
+
 .events-display h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 28px;
   font-weight: bold;
+}
+
+.events-filter {
+  margin-top: 30px;
+}
+
+.events-filter > button {
+  background: transparent;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  margin-right: 20px;
+  padding: 2px 5px;
+  border-radius: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.events-filter > button:hover {
+  background-color: #e2e2e2;
 }
 
 .events-display-list {

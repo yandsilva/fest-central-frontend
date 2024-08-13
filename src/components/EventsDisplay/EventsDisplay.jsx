@@ -8,6 +8,13 @@ export default function EventsDisplay() {
   return (
     <div className="events-display">
       <h2>Eventos Populares em Bauru</h2>
+      <div className="events-filter">
+        <button>Hoje</button>
+        <button>Amanhã</button>
+        <button>Essa Semana</button>
+        <button>Final de semana</button>
+        <button>Gratís</button>
+      </div>
       <div className="events-display-list">
         {event_list.map((item, index) => {
           return (
