@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { StoreContext } from "../../context/StoreContext";
 import EventsItem from "../EventsItem/EventsItem";
 
-export default function EventsDisplay() {
+export default function EventsDisplay({ category }) {
   const { event_list } = useContext(StoreContext);
   return (
     <div className="events-display">
@@ -17,18 +17,20 @@ export default function EventsDisplay() {
       </div>
       <div className="events-display-list">
         {event_list.map((item, index) => {
-          return (
-            <EventsItem
-              key={index}
-              id={item._id}
-              title={item.title}
-              price={item.price}
-              image={item.image}
-              local={item.local}
-              time={item.time}
-              rating={item.rating}
-            />
-          );
+          if (category === "All" || category === item.category) {
+            return (
+              <EventsItem
+                key={index}
+                id={item._id}
+                title={item.title}
+                price={item.price}
+                image={item.image}
+                local={item.local}
+                time={item.time}
+                rating={item.rating}
+              />
+            );
+          }
         })}
       </div>
       <div className="event-btn">

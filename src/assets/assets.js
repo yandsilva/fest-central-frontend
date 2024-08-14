@@ -76,17 +76,17 @@ export const menu_list = [
 export const event_list = [
   {
     _id: "1",
-    title: "Uma aventura",
+    name: "Uma aventura",
     image: arte_1,
     price: 12,
     local: "Senac",
     time: "00:00 AM - 00:00 PM",
     rating: "10 Interessado",
-    category: "arts",
+    category: "artes",
   },
   {
     _id: "2",
-    title: "Educação",
+    name: "Educação",
     image: educacao_1,
     price: 100,
     local: "Senac",
@@ -96,7 +96,7 @@ export const event_list = [
   },
   {
     _id: "3",
-    title: "Educação",
+    name: "Educação",
     image: educacao_2,
     price: 150,
     local: "Senac",
@@ -106,7 +106,7 @@ export const event_list = [
   },
   {
     _id: "4",
-    title: "Esporte",
+    name: "Esporte",
     image: esportes_1,
     price: 150,
     local: "Senac",
@@ -116,7 +116,7 @@ export const event_list = [
   },
   {
     _id: "5",
-    title: "Viagem",
+    name: "Viagem",
     image: viagem_1,
     price: 150,
     local: "Senac",
@@ -126,7 +126,7 @@ export const event_list = [
   },
   {
     _id: "6",
-    title: "Viagem",
+    name: "Viagem",
     image: viagem_2,
     price: 150,
     local: "Senac",
