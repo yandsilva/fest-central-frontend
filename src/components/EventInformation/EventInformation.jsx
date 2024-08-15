@@ -1,5 +1,6 @@
 import "./EventInformation.css";
 import { assets } from "../../assets/assets";
+import MapPage from "../MapPage/MapPage";
 
 export default function EventInformation() {
   return (
@@ -33,6 +34,7 @@ export default function EventInformation() {
           </div>
         </div>
       </div>
+      <MapPage />
     </div>
   );
 }
