@@ -35,22 +35,54 @@
   display: flex;
   justify-content: space-between;
 
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
-.date-time {
+.event-information-date-time {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.date-time > h3 {
+.event-information-date-time > span {
   font-family: "Open Sans";
   font-weight: bold;
+  font-size: 25px;
+  color: #2d2c3c;
+  margin-bottom: 5px;
+}
+
+.date-time {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Open Sans";
+  font-weight: 600;
   color: #2d2c3c;
 }
 
-.date-time > p {
+.date-time > img {
+  width: 20px;
+}
+
+.btn-ticket {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 50px;
+  gap: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ffe047;
+}
+
+.btn-ticket > img {
+  width: 20px;
+}
+
+.btn-ticket > p {
   font-family: "Open Sans";
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 700;
+  color: #2d2c3c;
 }

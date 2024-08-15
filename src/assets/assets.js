@@ -82,7 +82,7 @@ export const event_list = [
     local: "Senac",
     time: "00:00 AM - 00:00 PM",
     rating: "10 Interessado",
-    category: "artes",
+    category: "Culturas & Artes",
   },
   {
     _id: "2",
@@ -92,7 +92,7 @@ export const event_list = [
     local: "Senac",
     time: "00:00 AM - 00:00 PM",
     rating: "10 Interessado",
-    category: "Educacao",
+    category: "Educação & Negócios",
   },
   {
     _id: "3",
@@ -102,7 +102,7 @@ export const event_list = [
     local: "Senac",
     time: "00:00 AM - 00:00 PM",
     rating: "10 Interessado",
-    category: "Educacao",
+    category: "Educação & Negócios",
   },
   {
     _id: "4",
@@ -112,7 +112,7 @@ export const event_list = [
     local: "Senac",
     time: "00:00 AM - 00:00 PM",
     rating: "10 Interessado",
-    category: "esporte",
+    category: "Esportes & Fitness",
   },
   {
     _id: "5",
@@ -122,7 +122,7 @@ export const event_list = [
     local: "Senac",
     time: "00:00 AM - 00:00 PM",
     rating: "10 Interessado",
-    category: "viagem",
+    category: "Viagens & Aventuras",
   },
   {
     _id: "6",
@@ -132,6 +132,6 @@ export const event_list = [
     local: "Senac",
     time: "00:00 AM - 00:00 PM",
     rating: "10 Interessado",
-    category: "viagem",
+    category: "Viagens & Aventuras",
   },
 ];

@@ -14,21 +14,21 @@ export default function EventInformation() {
           </div>
         </div>
         <div className="event-information-date-buy">
-          <div className="date-time">
-            <h3>Data e Hora</h3>
-            <p>
+          <div className="event-information-date-time">
+            <span>Data e Hora</span>
+            <div className="date-time">
               <img src={assets.date_icon} alt="" />
-              Data
-            </p>
-            <p>
+              <p>Data</p>
+            </div>
+            <div className="date-time">
               <img src={assets.time_icon} alt="" />
-              Horário
-            </p>
+              <p>Horário</p>
+            </div>
           </div>
           <div className="ticket">
             <button className="btn-ticket" type="submit">
               <img src={assets.buy_ticket} alt="" />
-              Comprar Tickets
+              <p>Comprar Tickets</p>
             </button>
           </div>
         </div>
