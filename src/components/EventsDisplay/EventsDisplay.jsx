@@ -22,7 +22,7 @@ export default function EventsDisplay({ category }) {
               <EventsItem
                 key={index}
                 id={item._id}
-                title={item.title}
+                title={item.name}
                 price={item.price}
                 image={item.image}
                 local={item.local}

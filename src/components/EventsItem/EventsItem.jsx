@@ -11,7 +11,7 @@ export default function EventsItem({
   rating,
 }) {
   return (
-    <Link to="/cart/1" className="event-item">
+    <Link to={`/cart/${id}`} className="event-item">
       <div className="event-item-img-container">
         <img className="event-item-img" src={image} alt="" />
       </div>
