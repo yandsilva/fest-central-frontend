@@ -5,6 +5,7 @@ import EventsItem from "../EventsItem/EventsItem";
 
 export default function EventsDisplay({ category }) {
   const { event_list } = useContext(StoreContext);
+
   return (
     <div className="events-display">
       <h2>Eventos Populares em Bauru</h2>
