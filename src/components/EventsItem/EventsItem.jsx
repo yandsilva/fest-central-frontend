@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./EventsItem.css";
 
 export default function EventsItem({
@@ -10,7 +11,7 @@ export default function EventsItem({
   rating,
 }) {
   return (
-    <div className="event-item">
+    <Link to="/cart/1" className="event-item">
       <div className="event-item-img-container">
         <img className="event-item-img" src={image} alt="" />
       </div>
@@ -22,13 +23,13 @@ export default function EventsItem({
         <div className="event-description">
           <span className="event-description-title">{title}</span>
           <p className="event-description-local">{local}</p>
-          <p className="event-description-title-time">{time}</p>
+          <p className="event-description-time">{time}</p>
           <div className="event-price-rating-starts">
             <p>R${price}</p>
             <p>{rating}</p>
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }

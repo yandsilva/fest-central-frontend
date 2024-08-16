@@ -35,7 +35,7 @@
   display: flex;
   justify-content: space-between;
 
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 .event-information-date-time {
@@ -46,10 +46,10 @@
 
 .event-information-date-time > span {
   font-family: "Open Sans";
-  font-weight: bold;
-  font-size: 25px;
+  font-weight: 800;
+  font-size: 20px;
   color: #2d2c3c;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .date-time {
@@ -74,6 +74,7 @@
   border-radius: 10px;
   border: none;
   background-color: #ffe047;
+  cursor: pointer;
 }
 
 .btn-ticket > img {
@@ -84,5 +85,124 @@
   font-family: "Open Sans";
   font-size: 20px;
   font-weight: 700;
+  color: #2d2c3c;
+}
+
+.ticket-information {
+  margin-top: 60px;
+}
+
+.ticket-information > span {
+  font-family: "Open Sans";
+  font-weight: 800;
+  font-size: 20px;
+  color: #2d2c3c;
+}
+
+.ticket-type {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.ticket-type > p {
+  font-family: "Open Sans";
+  font-weight: 600;
+  color: #2d2c3c;
+}
+
+.ticket-type > img {
+  width: 20px;
+}
+
+.hospedado {
+  margin-top: 60px;
+}
+
+.hospedado > span {
+  font-family: "Open Sans";
+  font-weight: 800;
+  font-size: 20px;
+  color: #2d2c3c;
+}
+
+.host-profile {
+  margin-top: 20px;
+  display: flex;
+}
+
+.host-profile > img {
+  width: 70px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+
+.contact > p {
+  font-family: "Open Sans";
+  font-weight: 700;
+  color: #2d2c3c;
+  font-size: 18px;
+}
+
+.btn-contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-contact > button {
+  padding: 4px 10px;
+  font-family: "Open Sans";
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-white {
+  background-color: transparent;
+  border: 2px solid #2b293d;
+  color: #2b293d;
+}
+
+.btn-blue {
+  background-color: #2b293d;
+  border: 2px solid #2b293d;
+  color: white;
+}
+
+.btn-white:hover {
+  background-color: #2b293d;
+  color: white;
+}
+
+.btn-blue:hover {
+  background-color: white;
+  color: #2b293d;
+}
+
+.description-info {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.description-info > span {
+  font-family: "Open Sans";
+  font-weight: 800;
+  font-size: 20px;
+  color: #2d2c3c;
+}
+
+.description-info > p {
+  font-family: "Open Sans";
+  font-weight: normal;
   color: #2d2c3c;
 }

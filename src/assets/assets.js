@@ -13,6 +13,7 @@ import buy_ticket from "./buy_ticket.svg";
 import time_icon from "./time_icon.svg";
 import location_icon from "./location_icon.svg";
 import date_icon from "./date_icon.svg";
+import host_profile from "./host_profile.png";
 
 import menu_1 from "./menu_1.png";
 import menu_2 from "./menu_2.png";
@@ -44,6 +45,7 @@ export const assets = {
   time_icon,
   location_icon,
   date_icon,
+  host_profile,
 };
 
 export const menu_list = [

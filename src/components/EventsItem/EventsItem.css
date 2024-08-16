@@ -20,7 +20,7 @@
 .event-description {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  font-family: "Open Sans", serif;
 }
 
 .event-data {
@@ -39,9 +39,7 @@
 .event-data-day {
   color: #2b293d;
 }
-.event-description {
-  font-family: "Open Sans", serif;
-}
+
 .event-description-title {
   font-weight: 600;
   font-size: 18px;
@@ -54,6 +52,7 @@
 
 .event-description-time {
   font-size: 14px;
+  margin: 4px 0;
 }
 
 .event-price-rating-starts {

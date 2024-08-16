@@ -1,3 +1,29 @@
 .map-page {
-  height: 100vh;
+  margin-top: 60px;
+}
+
+.map-page > span {
+  font-family: "Open Sans";
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.map-page-location {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 20px 0 10px 0;
+}
+
+.location-icon {
+  width: 17px;
+}
+
+.map-page-location > p {
+  font-family: "Open Sans";
+  font-weight: 600;
+  color: #2d2c3c;
+}
+.map {
+  border: none;
 }
