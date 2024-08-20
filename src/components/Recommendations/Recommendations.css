@@ -1,0 +1,42 @@
+.recommendations {
+  margin: 50px 0;
+  height: 200px;
+  background-image: url("../../assets/recommendations_banner.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.recommendations > h3 {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 24px;
+  color: #2d2c3c;
+}
+
+.recommendations > p {
+  font-family: "Open Sans";
+  font-size: 16px;
+  color: #2d2c3c;
+}
+
+.recommendations-btn > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #2b293d;
+  color: #ffe047;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-arrow {
+  width: 20px;
+  margin-left: 20px;
+}
