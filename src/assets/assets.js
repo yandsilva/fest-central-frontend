@@ -16,6 +16,8 @@ import date_icon from "./date_icon.svg";
 import host_profile from "./host_profile.png";
 import arrow_icon from "./arrow_icon.svg";
 import recommendations_banner from "./recommendations_banner.png";
+import create_event_cta from "./create_event_cta.png";
+import plus_icon from "./plus_icon.svg";
 
 import menu_1 from "./menu_1.png";
 import menu_2 from "./menu_2.png";
@@ -50,6 +52,8 @@ export const assets = {
   host_profile,
   arrow_icon,
   recommendations_banner,
+  create_event_cta,
+  plus_icon,
 };
 
 export const menu_list = [
