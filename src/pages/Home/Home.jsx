@@ -4,6 +4,8 @@ import EventsDisplay from "../../components/EventsDisplay/EventsDisplay";
 import ExploreMenu from "../../components/ExploreMenu/ExploreMenu";
 import Recommendations from "../../components/Recommendations/Recommendations";
 import "./Home.css";
+import NewsLetter from "../../components/NewsLetter/NewsLetter";
+import Footer from "../../components/Footer/Footer";
 
 export default function Home() {
   const [category, setCategory] = useState("All");
@@ -17,6 +19,8 @@ export default function Home() {
         <EventsDisplay category={category} />
       </div>
       <CreateEventHome />
+      <NewsLetter />
+      <Footer />
     </>
   );
 }

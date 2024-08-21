@@ -3,8 +3,10 @@ import "./Cart.css";
 
 export default function Cart() {
   return (
-    <div>
-      <EventInformation />
-    </div>
+    <>
+      <div className="cart">
+        <EventInformation />
+      </div>
+    </>
   );
 }
