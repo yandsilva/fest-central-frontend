@@ -54,9 +54,14 @@
     height: 50px;
 }
 
-.logotipotopo{
-    margin-left: 50px;
-    width: 250px;
+.ticketprincipal{
+    width: auto;
+    height: 90%;
+}
+
+.ticketmobile{
+    width: auto;
+    height: 90%;
 }
 
 .bannerprincipal{

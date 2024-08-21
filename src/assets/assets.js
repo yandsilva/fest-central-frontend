@@ -20,6 +20,10 @@ import create_event_cta from "./create_event_cta.png";
 import plus_icon from "./plus_icon.svg";
 import logotipo_topo from "./logotipo_topo.png";
 import signUpButton from "./signUpButton.png";
+import bannergrande from "./herohigh.png"
+import banner from "./hero.png"
+import bannermobile from "./heromobile.png"
+import mobileticket from "./ticket.png"
 
 
 import menu_1 from "./menu_1.png";
@@ -59,6 +63,10 @@ export const assets = {
   plus_icon,
   logotipo_topo,
   signUpButton,
+  bannergrande,
+  banner,
+  bannermobile,
+  mobileticket,
 };
 
 export const menu_list = [
