@@ -6,12 +6,14 @@ import Recommendations from "../../components/Recommendations/Recommendations";
 import "./Home.css";
 import NewsLetter from "../../components/NewsLetter/NewsLetter";
 import Footer from "../../components/Footer/Footer";
+import HeaderMenu from "../../components/HeaderMenu/HeaderMenu";
 
 export default function Home() {
   const [category, setCategory] = useState("All");
 
   return (
     <>
+      <HeaderMenu />
       <div className="home">
         <ExploreMenu category={category} setCategory={setCategory} />
         <EventsDisplay category={category} />

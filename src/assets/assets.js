@@ -18,6 +18,9 @@ import arrow_icon from "./arrow_icon.svg";
 import recommendations_banner from "./recommendations_banner.png";
 import create_event_cta from "./create_event_cta.png";
 import plus_icon from "./plus_icon.svg";
+import logotipo_topo from "./logotipo_topo.png";
+import signUpButton from "./signUpButton.png";
+
 
 import menu_1 from "./menu_1.png";
 import menu_2 from "./menu_2.png";
@@ -54,6 +57,8 @@ export const assets = {
   recommendations_banner,
   create_event_cta,
   plus_icon,
+  logotipo_topo,
+  signUpButton,
 };
 
 export const menu_list = [
