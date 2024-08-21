@@ -10,8 +10,8 @@ export default function HeaderMenu() {
         <div> 
             <div className="topoLinks1">
                 <picture>
-                    <source media="(min-width: 950px)" srcset={assets.logotipo_topo} className="ticketprincipal" />
-                    <source media="(min-width: 650px)" srcset={assets.mobileticket} className="ticketmobile" />
+                    <source media="(min-width: 750px)" srcset={assets.logotipo_topo} className="ticketprincipal" />
+                    <source media="(min-width: 350px)" srcset={assets.mobileticket} className="ticketmobile" />
                     <img src={assets.mobileticket} className="ticketprincipal" ></img>
                 </picture>
             </div>
@@ -24,9 +24,7 @@ export default function HeaderMenu() {
             <div className="topoLinks3">
                 <Link to='/' className="linkunit">Criar Evento</Link>
                 <Link to='/' className="linkunit">Login</Link>
-            </div>
-            <div className="topolinks4">
-                <Link to='/'> <img src={assets.signUpButton} alt="" className="linkunitsign"/> </Link>
+                <Link to='/' className="botsubmit">SignUP</Link>
             </div>
             
             <div>
