@@ -1,5 +1,4 @@
 .footer {
-  margin-top: 50px;
   background-color: #2b293d;
 }
 
@@ -9,7 +8,7 @@
   align-items: start;
   border-bottom: 1px solid #a9a9a9;
   padding-bottom: 50px;
-  gap: 35px;
+  gap: 100px;
 }
 
 .footer-text {

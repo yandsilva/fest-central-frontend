@@ -22,7 +22,8 @@ export default function Footer() {
             <p>Suporte a Conta</p>
             <p>Lista de Eventos</p>
             <p>Ingresso para Eventos</p>
-            <p>Termos e Condições de Compra de Ingressos</p>
+            <p>Termos e Condições</p>
+            <p>Compra de Ingressos</p>
           </div>
         </div>
 
