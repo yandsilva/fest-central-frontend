@@ -1,9 +1,9 @@
 import { assets } from "../../assets/assets";
 import { Link } from "react-router-dom";
 
-import "./HeaderMenu.css";
+import "./HeaderMenu2.css";
 
-export default function HeaderMenu() {
+export default function HeaderMenu2() {
   return (
     <div>
       <div className="topoLinks1">
@@ -45,22 +45,6 @@ export default function HeaderMenu() {
         <Link to="/" className="botsubmit">
           SignUP
         </Link>
-      </div>
-
-      <div>
-        <picture>
-          <source
-            media="(min-width: 950px)"
-            srcSet={assets.banner}
-            className="bannerprincipal"
-          />
-          <source
-            media="(min-width: 350px)"
-            srcSet={assets.bannermobile}
-            className="bannerprincipal"
-          />
-          <img src={assets.bannergrande} className="bannerprincipal"></img>
-        </picture>
       </div>
     </div>
   );

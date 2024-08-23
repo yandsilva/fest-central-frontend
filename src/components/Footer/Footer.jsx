@@ -1,4 +1,3 @@
-import React from "react";
 import "./Footer.css";
 
 export default function Footer() {
@@ -48,14 +47,6 @@ export default function Footer() {
             <p>Instagram</p>
             <p>Twitter</p>
             <p>Youtube</p>
-          </div>
-        </div>
-
-        <div className="footer-text">
-          <h3 className="title-footer">Download The App</h3>
-          <div className="text-footer">
-            <img src="" alt="" />
-            <img src="" alt="" />
           </div>
         </div>
       </div>
