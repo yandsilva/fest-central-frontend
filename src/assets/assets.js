@@ -24,6 +24,7 @@ import bannergrande from "./herohigh.png"
 import banner from "./hero.png"
 import bannermobile from "./heromobile.png"
 import mobileticket from "./ticket.png"
+import upload_area from "./upload_area.png"
 
 
 import menu_1 from "./menu_1.png";
@@ -67,6 +68,7 @@ export const assets = {
   banner,
   bannermobile,
   mobileticket,
+  upload_area,
 };
 
 export const menu_list = [

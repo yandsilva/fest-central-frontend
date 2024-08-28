@@ -1,12 +1,21 @@
 import React, { useState } from "react";
-import { assets } from "../../assets/assets";
+import { useNavigate } from "react-router-dom";
 import "./CreateEvent.css";
 
 export default function CreateEvent() {
   const [eventType, setEventType] = useState("single");
 
+  const navigate = useNavigate()
+
+  const onSubmitHandle = (event) => {
+    event.preventDefault()
+
+    navigate("/create-event2")
+  }
+
+
   return (
-    <form className="create-event-form">
+    <form onSubmit={onSubmitHandle} className="create-event-form">
       <h1>Criar novo evento</h1>
       <div className="create-event-details">
         <h3>Detalhes do evento</h3>

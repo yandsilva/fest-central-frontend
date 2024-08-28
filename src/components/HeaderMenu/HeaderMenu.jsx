@@ -36,7 +36,7 @@ export default function HeaderMenu() {
         </Link>
       </div>
       <div className="topoLinks3">
-        <Link to="/" className="linkunit">
+        <Link to="/create-event" className="linkunit">
           Criar Evento
         </Link>
         <Link to="/" className="linkunit">

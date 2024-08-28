@@ -2,9 +2,16 @@ import "./EventsDisplay.css";
 import { useContext } from "react";
 import { StoreContext } from "../../context/StoreContext";
 import EventsItem from "../EventsItem/EventsItem";
+import { useState } from "react";
+import { useEffect } from "react";
 
 export default function EventsDisplay({ category }) {
   const { event_list } = useContext(StoreContext);
+  const [latestProducts, setLatestProducts] = useState([])
+
+  useEffect(() => {
+    setLatestProducts(event_list.slice(0, 6))
+  },[])
 
   return (
     <div className="events-display">
@@ -17,7 +24,7 @@ export default function EventsDisplay({ category }) {
         <button>Gratís</button>
       </div>
       <div className="events-display-list">
-        {event_list.map((item, index) => {
+        {latestProducts.map((item, index) => {
           if (category === "All" || category === item.category) {
             return (
               <EventsItem
