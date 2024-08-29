@@ -1,18 +1,32 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./CreateEvent.css";
+import { useForm } from "react-hook-form";
 
 export default function CreateEvent() {
   const [eventType, setEventType] = useState("single");
+  const { register, setValue } = useForm();
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const onSubmitHandle = (event) => {
-    event.preventDefault()
+    event.preventDefault();
 
-    navigate("/create-event2")
-  }
+    navigate("/create-event2");
+  };
 
+  const checkCEP = (event) => {
+    const cep = event.target.value.replace(/\D/g, "");
+    fetch(`https://viacep.com.br/ws/${cep}/json/`)
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        setValue("address", data.logradouro);
+        setValue("neighborhood", data.bairro);
+        setValue("city", data.localidade);
+        setValue("state", data.uf);
+      });
+  };
 
   return (
     <form onSubmit={onSubmitHandle} className="create-event-form">
@@ -85,10 +99,24 @@ export default function CreateEvent() {
         <div className="event-location">
           <label>Local do evento:</label>
           <div className="event-location-input">
-            <input type="text" placeholder="Estado" />
-            <input type="text" placeholder="Cidade" />
-            <input type="text" placeholder="Bairro" />
-            <input type="text" placeholder="Endereço" />
+            <input
+              type="text"
+              {...register("zipcode")}
+              onBlur={checkCEP}
+              placeholder="CEP"
+            />
+            <input type="text" {...register("state")} placeholder="Estado" />
+            <input type="text" {...register("city")} placeholder="Cidade" />
+            <input
+              type="text"
+              {...register("neighborhood")}
+              placeholder="Bairro"
+            />
+            <input
+              type="text"
+              {...register("address")}
+              placeholder="Endereço"
+            />
           </div>
         </div>
       </div>
