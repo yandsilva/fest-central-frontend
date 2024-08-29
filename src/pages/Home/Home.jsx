@@ -5,7 +5,6 @@ import ExploreMenu from "../../components/ExploreMenu/ExploreMenu";
 import Recommendations from "../../components/Recommendations/Recommendations";
 import "./Home.css";
 import NewsLetter from "../../components/NewsLetter/NewsLetter";
-import Footer from "../../components/Footer/Footer";
 import HeaderMenu from "../../components/HeaderMenu/HeaderMenu";
 
 export default function Home() {
@@ -22,7 +21,6 @@ export default function Home() {
       </div>
       <CreateEventHome />
       <NewsLetter />
-      <Footer />
     </>
   );
 }

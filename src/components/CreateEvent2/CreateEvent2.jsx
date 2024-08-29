@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import upload from "../../assets/upload_area.png";
+import {Link} from "react-router-dom"
 import "./CreateEvent2.css";
 
 export default function CreateEvent2() {
@@ -32,8 +33,10 @@ export default function CreateEvent2() {
         <>Formatos de arquivo válidos: JPG, GIF, PNG.</>
       </div>
       <div>
-        <button>Volte para Editar Evento</button>
-        <button>Salva & Continuar</button>
+        <Link to="/create-event">
+        Volte para Editar Evento
+        </Link>
+        <Link to="/create-event3">Salva & Continuar</Link>
       </div>
     </div>
   );

@@ -20,7 +20,6 @@ export default function CreateEvent() {
     fetch(`https://viacep.com.br/ws/${cep}/json/`)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         setValue("address", data.logradouro);
         setValue("neighborhood", data.bairro);
         setValue("city", data.localidade);
@@ -41,12 +40,12 @@ export default function CreateEvent() {
           <div className="create-event-category">
             <label>Categoria do evento:</label>
             <select>
-              <option value="">Entretenimento</option>
-              <option value="">Educação & Negócios</option>
-              <option value="">Culturas & Artes</option>
-              <option value="">Esportes & Fitness</option>
-              <option value="">Tecnologias & Inovação</option>
-              <option value="">Viagens & Aventuras</option>
+              <option value="Entretenimento">Entretenimento</option>
+              <option value="Educação & Negócios">Educação & Negócios</option>
+              <option value="Culturas & Artes">Culturas & Artes</option>
+              <option value="Esportes & Fitness">Esportes & Fitness</option>
+              <option value="Tecnologias & Inovação">Tecnologias & Inovação</option>
+              <option value="Viagens & Aventuras">Viagens & Aventuras</option>
             </select>
           </div>
         </div>
