@@ -6,21 +6,23 @@ import "./HeaderMenu.css";
 export default function HeaderMenu() {
   return (
     <div>
-      <div className="topoLinks1">
-        <picture>
-          <source
-            media="(min-width: 750px)"
-            srcSet={assets.logotipo_topo}
-            className="ticketprincipal"
-          />
-          <source
-            media="(min-width: 350px)"
-            srcSet={assets.mobileticket}
-            className="ticketmobile"
-          />
-          <img src={assets.mobileticket} className="ticketprincipal"></img>
-        </picture>
-      </div>
+      <Link to="/">
+        <div className="topoLinks1">
+          <picture>
+            <source
+              media="(min-width: 750px)"
+              srcSet={assets.logotipo_topo}
+              className="ticketprincipal"
+            />
+            <source
+              media="(min-width: 350px)"
+              srcSet={assets.ticket}
+              className="ticketmobile"
+            />
+            <img src={assets.mobileticket} className="ticketprincipal"></img>
+          </picture>
+        </div>
+      </Link>
       <div className="topoLinks2">
         <Link to="/" className="linkunit">
           Início
@@ -45,22 +47,6 @@ export default function HeaderMenu() {
         <Link to="/" className="botsubmit">
           SignUP
         </Link>
-      </div>
-
-      <div>
-        <picture>
-          <source
-            media="(min-width: 950px)"
-            srcSet={assets.banner}
-            className="bannerprincipal"
-          />
-          <source
-            media="(min-width: 350px)"
-            srcSet={assets.bannermobile}
-            className="bannerprincipal"
-          />
-          <img src={assets.bannergrande} className="bannerprincipal"></img>
-        </picture>
       </div>
     </div>
   );

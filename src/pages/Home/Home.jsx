@@ -5,14 +5,14 @@ import ExploreMenu from "../../components/ExploreMenu/ExploreMenu";
 import Recommendations from "../../components/Recommendations/Recommendations";
 import "./Home.css";
 import NewsLetter from "../../components/NewsLetter/NewsLetter";
-import HeaderMenu from "../../components/HeaderMenu/HeaderMenu";
+import BannerTopoSite from "../../components/HeaderMenu/BannerTopoSite";
 
 export default function Home() {
   const [category, setCategory] = useState("All");
 
   return (
     <>
-      <HeaderMenu />
+      <BannerTopoSite />
       <div className="home">
         <ExploreMenu category={category} setCategory={setCategory} />
         <EventsDisplay category={category} />

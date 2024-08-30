@@ -6,10 +6,12 @@ import CreateEvent from "./components/CreateEvent/CreateEvent";
 import CreateEvent2 from "./components/CreateEvent2/CreateEvent2";
 import Footer from "./components/Footer/Footer";
 import CreateEvent3 from "./components/CreateEvent3/CreateEvent3";
+import HeaderMenu from "./components/HeaderMenu/HeaderMenu";
 
 function App() {
   return (
     <div className="app">
+      <HeaderMenu />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/cart/:id" element={<Cart />} />

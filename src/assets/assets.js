@@ -20,12 +20,10 @@ import create_event_cta from "./create_event_cta.png";
 import plus_icon from "./plus_icon.svg";
 import logotipo_topo from "./logotipo_topo.png";
 import signUpButton from "./signUpButton.png";
-import bannergrande from "./herohigh.png"
-import banner from "./hero.png"
-import bannermobile from "./heromobile.png"
-import mobileticket from "./ticket.png"
-import upload_area from "./upload_area.png"
-
+import heromobile from "./heromobile.png";
+import heromasc from "./heromasc.png";
+import ticket from "./ticket.png";
+import upload_area from "./upload_area.png";
 
 import menu_1 from "./menu_1.png";
 import menu_2 from "./menu_2.png";
@@ -162,8 +160,6 @@ import img_126 from "./img_126.png";
 import img_127 from "./img_127.png";
 import img_128 from "./img_128.png";
 
-
-
 export const assets = {
   ticket_logo,
   apple_store,
@@ -187,10 +183,9 @@ export const assets = {
   plus_icon,
   logotipo_topo,
   signUpButton,
-  bannergrande,
-  banner,
-  bannermobile,
-  mobileticket,
+  heromasc,
+  heromobile,
+  ticket,
   upload_area,
 };
 

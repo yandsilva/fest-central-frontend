@@ -12,7 +12,9 @@ export default function EventInformation() {
 
   return event ? (
     <div className="event-information">
-      <img className="event-information-image" src={assets.hero} alt="" />
+      <div className="event-information-image">
+        <img src={event.image} alt="" />
+      </div>
       <div className="event-information-container">
         <div className="event-information-main">
           <h1>{event.name}</h1>
