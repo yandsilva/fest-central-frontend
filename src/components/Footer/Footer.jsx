@@ -38,7 +38,7 @@ export default function Footer() {
               <p>Artes Performáticas</p>
               <p>Esportes ao ar Livre</p>
               <p>Exposições</p>
-              <p>Workshops, Conferencias & Aulas</p>
+              <p>Workshops & Conferencias</p>
             </div>
           </div>
         </div>
