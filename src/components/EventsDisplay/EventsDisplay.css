@@ -55,3 +55,9 @@
   background: transparent;
   padding: 12px 150px;
 }
+
+@media (max-width: 500px) {
+  .btn {
+    padding: 12px 50px;
+  }
+}

@@ -27,17 +27,19 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="footer-text">
-          <h3 className="title-footer">Categorias</h3>
-          <div className="text-footer">
-            <p>Concertos e Shows</p>
-            <p>Festivais & Lifestyle</p>
-            <p>Negócios & Networking</p>
-            <p>Comida & Bebidas</p>
-            <p>Artes Performáticas</p>
-            <p>Esportes ao ar Livre</p>
-            <p>Exposições</p>
-            <p>Workshops, Conferencias & Aulas</p>
+        <div className="footer-mobile-category">
+          <div className="footer-text">
+            <h3 className="title-footer">Categorias</h3>
+            <div className="text-footer">
+              <p>Concertos e Shows</p>
+              <p>Festivais & Lifestyle</p>
+              <p>Negócios & Networking</p>
+              <p>Comida & Bebidas</p>
+              <p>Artes Performáticas</p>
+              <p>Esportes ao ar Livre</p>
+              <p>Exposições</p>
+              <p>Workshops, Conferencias & Aulas</p>
+            </div>
           </div>
         </div>
 

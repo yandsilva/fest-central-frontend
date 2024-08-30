@@ -1,5 +1,4 @@
 import { useState } from "react";
-import CreateEventHome from "../../components/CreateEventHome/CreateEventHome";
 import EventsDisplay from "../../components/EventsDisplay/EventsDisplay";
 import ExploreMenu from "../../components/ExploreMenu/ExploreMenu";
 import Recommendations from "../../components/Recommendations/Recommendations";
@@ -19,7 +18,6 @@ export default function Home() {
         <Recommendations />
         <EventsDisplay category={category} />
       </div>
-      <CreateEventHome />
       <NewsLetter />
     </>
   );
