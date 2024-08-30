@@ -44,7 +44,9 @@ export default function CreateEvent() {
               <option value="Educação & Negócios">Educação & Negócios</option>
               <option value="Culturas & Artes">Culturas & Artes</option>
               <option value="Esportes & Fitness">Esportes & Fitness</option>
-              <option value="Tecnologias & Inovação">Tecnologias & Inovação</option>
+              <option value="Tecnologias & Inovação">
+                Tecnologias & Inovação
+              </option>
               <option value="Viagens & Aventuras">Viagens & Aventuras</option>
             </select>
           </div>
