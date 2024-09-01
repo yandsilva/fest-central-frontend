@@ -1,0 +1,143 @@
+.events {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-top: 40px;
+  border-top-width: 1px;
+  width: 95%;
+  margin: auto;
+}
+
+.events-filters {
+  min-width: 240px;
+}
+
+.events-filter {
+  margin: 8px 0;
+  font-size: 20px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+
+.dropdown-icon {
+  height: 12px;
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+.events-category {
+  border: 1px solid #d1d5db;
+  padding: 12px 0 12px 20px;
+  margin-top: 24px;
+}
+
+.hidden {
+  display: none;
+}
+
+.category {
+  margin-bottom: 12px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  font-family: "Open Sans";
+}
+
+.events-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #374151;
+}
+
+.events-menu > p {
+  display: flex;
+  gap: 8px;
+  font-family: "Open Sans";
+  font-weight: 500;
+}
+
+.events-category-input {
+  width: 12px;
+}
+
+/* Right Side */
+
+.events-right-side {
+  /* display: flex; */
+  flex: 1;
+}
+
+.events-sort {
+  display: flex;
+  justify-content: end;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 26px;
+}
+
+.events-sort > p {
+  font-family: "Open Sans";
+  font-weight: 500;
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.product-sort {
+  border: 2px solid #d1d5db;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0 12px;
+}
+
+/* Map Events */
+
+.events-maps {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 16px;
+  row-gap: 24px;
+}
+
+/* Responsividade */
+
+@media (min-width: 640px) {
+  .events {
+    flex-direction: row;
+    gap: 40px;
+  }
+  .events-category {
+    display: block;
+  }
+  .dropdown-icon {
+    display: none;
+  }
+
+  /* Right Side */
+
+  .events-sort {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+@media (min-width: 768px) {
+  .events-maps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .events-maps {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import upload from "../../assets/upload_area.png";
 import { Link } from "react-router-dom";
 import "./CreateEvent2.css";
 

@@ -28,6 +28,7 @@ import ticket_free from "./ticket_free.png";
 import ticket_pay from "./ticket_pay.png";
 import hamburger_mobile from "./hamburger_mobile.png";
 import profile_mobile from "./profile_mobile.png";
+import dropdown_icon from "./dropdown_icon.png";
 
 import menu_1 from "./menu_1.png";
 import menu_2 from "./menu_2.png";
@@ -186,6 +187,7 @@ export const assets = {
   ticket_pay,
   hamburger_mobile,
   profile_mobile,
+  dropdown_icon,
 };
 
 export const menu_list = [

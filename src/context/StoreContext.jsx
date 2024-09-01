@@ -1,5 +1,6 @@
 import { createContext } from "react";
 import { event_list } from "../assets/assets";
+
 export const StoreContext = createContext(null);
 
 const StoreContextProvider = ({ children }) => {

@@ -1,21 +1,22 @@
-import "./EventsDisplay.css";
 import { useContext } from "react";
 import { StoreContext } from "../../context/StoreContext";
 import EventsItem from "../EventsItem/EventsItem";
 import { useState } from "react";
 import { useEffect } from "react";
+import "./BestEvent.css";
 
-export default function EventsDisplay({ category }) {
+export default function BestEvent({ category }) {
   const { event_list } = useContext(StoreContext);
-  const [latestProducts, setLatestProducts] = useState([]);
+  const [bestSeller, setBestSeller] = useState([]);
 
   useEffect(() => {
-    setLatestProducts(event_list.slice(0, 6));
+    const bestProduct = event_list;
+    setBestSeller(bestProduct.slice(0, 6));
   }, []);
 
   return (
     <div className="events-display">
-      <h2>Eventos Populares em Bauru</h2>
+      <h2>Melhores Eventos</h2>
       <div className="events-filter">
         <button>Hoje</button>
         <button>Amanhã</button>
@@ -24,7 +25,7 @@ export default function EventsDisplay({ category }) {
         <button>Gratís</button>
       </div>
       <div className="events-display-list">
-        {latestProducts.map((item, index) => {
+        {bestSeller.map((item, index) => {
           if (category === "All" || category === item.category) {
             return (
               <EventsItem
