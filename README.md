@@ -49,6 +49,10 @@ npm install
 npm run dev
 ```
 
-## Acesse o site em
+## Acesse a porta
 
 - **http://localhost:5173/**
+
+## Acesse o site em
+
+- **festcentral.com.br**
