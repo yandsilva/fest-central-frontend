@@ -56,8 +56,17 @@
   padding: 12px 150px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 654px) {
   .btn {
     padding: 12px 50px;
+  }
+
+  .events-display h2 {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .events-filter > button {
+    display: none;
   }
 }
