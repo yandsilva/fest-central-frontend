@@ -80,3 +80,85 @@
   font-family: "Open Sans";
   font-weight: normal;
 }
+
+.login-container-2{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.login-email{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-family: "Open Sans";
+  color: #636363;
+  font-size: 14px;
+}
+
+.login-email > input{
+  padding: 16px 10px ;
+  border-radius: 5px;
+  border: 1px solid #828282;
+  outline: none;
+}
+
+.login-email > input[type=text]{
+  font-size: 15px;
+
+}
+
+
+
+.login-senha{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-family: "Open Sans";
+  color: #636363;
+  font-size: 14px;
+}
+
+.login-senha > input{
+  padding: 16px 10px ;
+  border-radius: 5px;
+  border: 1px solid #828282;
+  outline: none;
+}
+
+.login-senha > input[type=text]{
+  font-size: 15px;
+
+}
+
+.login-button{
+  padding: 16px 10px;
+  margin-top: 15px;
+  background-color: #2b293d;
+  color: #fff;
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 5px;
+  outline: none;
+   cursor: pointer;
+  
+}
+
+.criar-conta{
+  display: flex;
+  gap: 5px;
+  font-family: "Open Sans";
+  color: #636363; 
+  font-size: 14px;
+  margin-top: -40px;
+}
+
+.criar-conta > button{
+  background-color: transparent;
+  border: none;
+  font-family: "Open Sans";
+  cursor: pointer ;
+}

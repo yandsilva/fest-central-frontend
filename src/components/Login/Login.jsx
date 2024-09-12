@@ -34,6 +34,23 @@ export default function Login() {
               <span>Entrar com o Facebook</span>
             </div>
           </div>
+          <div className="login-container-2">
+            <div className="login-email">
+              <p>Endereço de email</p>
+              <input type="text" placeholder="Digite seu e-mail" />
+            </div>
+            <div className="login-senha">
+              <p>Senha</p>
+              <input type="password" placeholder="Digite sua senha" />
+            </div>
+            <button className="login-button">Login</button>
+          </div>
+          <div className="criar-conta">
+            <p>Não tem uma conta?</p>
+            <button>
+              Sign up
+            </button>
+          </div>
         </div>
       </div>
     </div>

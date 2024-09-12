@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Navbar.css";
 import { assets } from "../../assets/assets";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,7 +46,7 @@ export default function Navbar() {
           <p>Criar Evento</p>
         </Link>
         <div className="navbar-login-sign">
-          <Link to="/">
+          <Link to="/login">
             <p>Login</p>
           </Link>
           <Link className="navbar-sign" to="/">
