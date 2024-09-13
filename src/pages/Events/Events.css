@@ -18,6 +18,12 @@
   outline: none;
 }
 
+.events-search > input[type="text"] {
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 600;
+}
+
 .events {
   display: flex;
   flex-direction: column;
