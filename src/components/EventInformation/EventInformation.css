@@ -3,7 +3,7 @@
 }
 
 .event-information-image {
-  background-image: url(../../assets/heromasc.png);
+  background-image: url("../../assets/heromasc.png");
   text-align: center;
 }
 
@@ -32,6 +32,7 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  cursor: pointer;
 }
 
 .favorite-share > img {
@@ -93,6 +94,11 @@
   font-size: 20px;
   font-weight: 700;
   color: #2d2c3c;
+}
+
+.event-info-map {
+  display: flex;
+  justify-content: space-between;
 }
 
 .ticket-information {

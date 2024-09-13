@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { assets } from "../../assets/assets.js";
+import { Star } from "lucide-react";
 import "./EventsItem.css";
 
 export default function EventsItem({
@@ -46,7 +47,10 @@ export default function EventsItem({
           <p className="event-description-time">{time}</p>
           <div className="event-price-rating-starts">
             <p>R${price}</p>
-            <p>{rating}</p>
+            <div className="event-star-icon">
+              <Star width="15px" />
+              <p>{rating} Interessados</p>
+            </div>
           </div>
         </div>
       </a>

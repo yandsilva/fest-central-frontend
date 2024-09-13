@@ -92,7 +92,7 @@ export default function Events() {
               <input
                 className="events-category-input"
                 type="checkbox"
-                value={"ulturas & Artes"}
+                value={"Culturas & Artes"}
                 onChange={toggleCategory}
               />
               Culturas & Artes
@@ -110,10 +110,10 @@ export default function Events() {
               <input
                 className="events-category-input"
                 type="checkbox"
-                value={"Tecnologias & Inovações"}
+                value={"Tecnologias & Inovação"}
                 onChange={toggleCategory}
               />
-              Tecnologias & Inovações
+              Tecnologias & Inovação
             </p>
             <p>
               <input

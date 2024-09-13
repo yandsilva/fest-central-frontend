@@ -2,9 +2,11 @@ import "./EventInformation.css";
 import MapPage from "../MapPage/MapPage";
 import { useParams } from "react-router-dom";
 import { assets, event_list } from "../../assets/assets";
+import { useState } from "react";
 
 export default function EventInformation() {
   const { id } = useParams();
+  const [favorite, setFavorite] = useState(false);
 
   const event = event_list.find((event) => event._id === id);
 
@@ -19,7 +21,13 @@ export default function EventInformation() {
         <div className="event-information-main">
           <h1>{event.name}</h1>
           <div className="favorite-share">
-            <img src={assets.star_favorite} alt="" />
+            <div onClick={() => setFavorite(!favorite)}>
+              {favorite ? (
+                <img src={assets.favorite_icon_2} alt="" />
+              ) : (
+                <img src={assets.favorite_icon_1} alt="" />
+              )}
+            </div>
             <img src={assets.share_icon} alt="" />
           </div>
         </div>
@@ -42,15 +50,19 @@ export default function EventInformation() {
             </button>
           </div>
         </div>
-      </div>
-      <MapPage />
-      <div className="ticket-information">
-        <span>Informações sobre o ingresso</span>
-        <div className="ticket-type">
-          <img src={assets.buy_ticket} alt="" />
-          <p>Tipo de ingresso: Preço / ingresso</p>
+
+        <div className="event-info-map">
+          <MapPage />
+          <div className="ticket-information">
+            <span>Informações sobre o ingresso</span>
+            <div className="ticket-type">
+              <img src={assets.buy_ticket} alt="" />
+              <p>Tipo de ingresso: R${event.price} / ingresso</p>
+            </div>
+          </div>
         </div>
       </div>
+
       <div className="hospedado">
         <span>Hospedado por</span>
         <div className="host-profile">

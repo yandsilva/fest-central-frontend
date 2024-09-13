@@ -1,0 +1,62 @@
+.hero {
+  background-image: url("../../assets/hero.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text {
+  font-family: "Montserrat";
+  color: white;
+  font-size: 2rem;
+}
+
+.hero-text > span {
+  color: #ffe047;
+}
+
+.hero-content {
+  display: flex;
+  margin-top: 30px;
+}
+
+.hero-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  padding: 12px 10px;
+  border-right: 2px solid #bbbbbb;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.hero-search > input[type="text"] {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 15px;
+  width: 450px;
+  border: none;
+  outline: none;
+}
+
+.hero-map-pin {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  padding: 12px 10px;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.hero-map-pin > input[type="text"] {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  outline: none;
+}
