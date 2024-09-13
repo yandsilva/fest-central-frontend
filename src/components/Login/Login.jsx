@@ -1,10 +1,56 @@
 import React from "react";
 import "./Login.css";
 import { assets } from "../../assets/assets";
+import { set, useForm } from "react-hook-form";
+import { z } from "zod";
+import { zodResolver } from "@hookform/resolvers/zod";
+
+const schema = z
+  .object({
+    password: z
+      .string()
+      .min(6, "Por favor, a senha precisa ter pelo menos 6 caracteres"),
+    confirmPassword: z.string(),
+  })
+  .refine((fields) => fields.password === fields.confirmPassword, {
+    path: ["confirmPassword"],
+    message: "As senhas precisam ser iguais",
+  });
+
+const asyncFunction = async () => {
+  const myPromise = new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("Hello");
+    }, 3000);
+  });
+
+  return myPromise;
+};
 
 export default function Login() {
+  const { register, handleSubmit, formState } = useForm({
+    mode: "all",
+    criteriaMode: "all",
+    resolver: zodResolver(schema),
+    defaultValues: {
+      password: "",
+      confirmPassword: "",
+    },
+  });
+
+  const { errors, isSubmitting } = formState;
+
+  console.log("errors", errors);
+  console.log("isSubmitting", isSubmitting);
+
+  const handleSubmitForm = async (data) => {
+    console.log("submit", data);
+
+    await asyncFunction();
+  };
+
   return (
-    <div className="login">
+    <form onSubmit={handleSubmit(handleSubmitForm)} className="login">
       <div className="escrita">
         <img src="" alt="" />
 
@@ -37,22 +83,36 @@ export default function Login() {
           <div className="login-container-2">
             <div className="login-email">
               <p>Endereço de email</p>
-              <input type="text" placeholder="Digite seu e-mail" />
+              <input
+                {...register("password")}
+                type="password"
+                placeholder="Digite seu e-mail"
+              />
             </div>
+
+            {errors.password && <p>{errors.password.message}</p>}
+
             <div className="login-senha">
               <p>Senha</p>
-              <input type="password" placeholder="Digite sua senha" />
+              <input
+                {...register("confirmPassword")}
+                type="password"
+                placeholder="Digite sua senha"
+              />
             </div>
-            <button className="login-button">Login</button>
+
+            {errors.confirmPassword && <p>{errors.confirmPassword.message}</p>}
+
+            <button disabled={isSubmitting} className="login-button">
+              {isSubmitting ? "Logando..." : "Login"}
+            </button>
           </div>
           <div className="criar-conta">
             <p>Não tem uma conta?</p>
-            <button>
-              Sign up
-            </button>
+            <button>Sign up</button>
           </div>
         </div>
       </div>
-    </div>
+    </form>
   );
 }

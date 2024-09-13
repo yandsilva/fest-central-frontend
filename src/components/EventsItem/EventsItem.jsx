@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "./EventsItem.css";
 
 export default function EventsItem({
@@ -11,7 +10,7 @@ export default function EventsItem({
   rating,
 }) {
   return (
-    <Link to={`/cart/${id}`} className="event-item">
+    <a href={`/cart/${id}`} className="event-item">
       <div className="event-item-img-container">
         <img className="event-item-img" src={image} alt="" />
       </div>
@@ -30,6 +29,6 @@ export default function EventsItem({
           </div>
         </div>
       </div>
-    </Link>
+    </a>
   );
 }
