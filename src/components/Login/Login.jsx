@@ -79,18 +79,18 @@ export default function Login() {
               />
             </div>
 
-            {errors.password && <p>{errors.password.message}</p>}
+            {errors.email && <p>{errors.email.message}</p>}
 
             <div className="login-senha">
               <p>Senha</p>
               <input
-                {...register("confirmPassword")}
+                {...register("password")}
                 type="password"
                 placeholder="Digite sua senha"
               />
             </div>
 
-            {errors.confirmPassword && <p>{errors.confirmPassword.message}</p>}
+            {errors.password && <p>{errors.password.message}</p>}
 
             <button disabled={isSubmitting} className="login-button">
               {isSubmitting ? "Logando..." : "Login"}
