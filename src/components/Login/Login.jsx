@@ -1,21 +1,14 @@
 import React from "react";
 import "./Login.css";
 import { assets } from "../../assets/assets";
-import { set, useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
 
-const schema = z
-  .object({
-    password: z
-      .string()
-      .min(6, "Por favor, a senha precisa ter pelo menos 6 caracteres"),
-    confirmPassword: z.string(),
-  })
-  .refine((fields) => fields.password === fields.confirmPassword, {
-    path: ["confirmPassword"],
-    message: "As senhas precisam ser iguais",
-  });
+const schema = z.object({
+  email: z.string().email("Por favor, coloque um E-mail"),
+  password: z.string().min(6, "A senha deve ter pelo menos 6 caractere"),
+});
 
 const asyncFunction = async () => {
   const myPromise = new Promise((resolve) => {
@@ -32,10 +25,6 @@ export default function Login() {
     mode: "all",
     criteriaMode: "all",
     resolver: zodResolver(schema),
-    defaultValues: {
-      password: "",
-      confirmPassword: "",
-    },
   });
 
   const { errors, isSubmitting } = formState;
@@ -84,8 +73,8 @@ export default function Login() {
             <div className="login-email">
               <p>Endereço de email</p>
               <input
-                {...register("password")}
-                type="password"
+                {...register("email")}
+                type="text"
                 placeholder="Digite seu e-mail"
               />
             </div>
