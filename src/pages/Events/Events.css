@@ -1,3 +1,23 @@
+.events-search {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  gap: 8px;
+  width: 600px;
+  margin: 40px auto 0 auto;
+  padding: 16px 16px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 8px;
+}
+
+.events-search > input {
+  padding: 4px;
+  width: 90%;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
 .events {
   display: flex;
   flex-direction: column;

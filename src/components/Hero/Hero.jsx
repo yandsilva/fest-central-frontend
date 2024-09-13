@@ -1,4 +1,3 @@
-import React from "react";
 import { Search, MapPin, ChevronDown } from "lucide-react";
 import "./Hero.css";
 

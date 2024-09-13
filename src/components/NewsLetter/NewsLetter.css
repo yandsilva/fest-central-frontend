@@ -32,6 +32,10 @@
   align-items: center;
 }
 
+.btn-newsletter > input {
+  outline: none;
+}
+
 .input-email {
   border: none;
   padding: 20px;
