@@ -29,6 +29,8 @@ import ticket_pay from "./ticket_pay.png";
 import hamburger_mobile from "./hamburger_mobile.png";
 import profile_mobile from "./profile_mobile.png";
 import dropdown_icon from "./dropdown_icon.png";
+import favorite_icon_1 from "./favorite_icon_1.png";
+import favorite_icon_2 from "./favorite_icon_2.png";
 
 import menu_1 from "./menu_1.png";
 import menu_2 from "./menu_2.png";
@@ -188,11 +190,13 @@ export const assets = {
   hamburger_mobile,
   profile_mobile,
   dropdown_icon,
+  favorite_icon_1,
+  favorite_icon_2,
 };
 
 export const menu_list = [
   {
-    menu_name: "Entreterimentos",
+    menu_name: "Diversão",
     menu_image: menu_1,
   },
   {

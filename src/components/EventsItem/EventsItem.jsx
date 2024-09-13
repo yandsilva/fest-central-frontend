@@ -1,3 +1,5 @@
+import { useState } from "react";
+import { assets } from "../../assets/assets.js";
 import "./EventsItem.css";
 
 export default function EventsItem({
@@ -9,12 +11,31 @@ export default function EventsItem({
   time,
   rating,
 }) {
+  const [favorite, setFavorite] = useState(false);
+
   return (
-    <a href={`/cart/${id}`} className="event-item">
+    <div className="event-item">
       <div className="event-item-img-container">
+        <div onClick={() => setFavorite(!favorite)}>
+          {favorite ? (
+            <img
+              className="favorite-icon"
+              src={assets.favorite_icon_2}
+              alt=""
+            />
+          ) : (
+            <img
+              className="favorite-icon"
+              src={assets.favorite_icon_1}
+              alt=""
+            />
+          )}
+        </div>
+
         <img className="event-item-img" src={image} alt="" />
       </div>
-      <div className="event-content-description">
+
+      <a href={`/cart/${id}`} className="event-content-description">
         <div className="event-data">
           <p className="event-data-month">NOV</p>
           <p className="event-data-day">22</p>
@@ -28,7 +49,7 @@ export default function EventsItem({
             <p>{rating}</p>
           </div>
         </div>
-      </div>
-    </a>
+      </a>
+    </div>
   );
 }
